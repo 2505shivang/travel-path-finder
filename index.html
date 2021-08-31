@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Path Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+
+    <!-- vis.js library -->
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>  
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar " style="font-weight: bold; color: rgb(243, 236, 236); background-color: black;"> 
+        Least Travel-Time Route Finder
+    </nav>
+    
+    <div id="container">
+        <div id="left-pane">
+           <!-- The generated network graph problem will be rendered here! -->
+        </div>
+
+        <div id="right-pane" >
+            <span id="heading" style="width: 100%; font-size: x-large; background-color: cornsilk;">
+                <!-- The generated problem statement will be rendered here! -->
+            </span>
+            <button type="button" class="btn btn-success" id="solve-button">Solve</button>
+
+            <div id="right-pane-solution-window" style="display: none">
+            <!-- When clicked on Solve, the solution will be displayed here! -->
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; flex-direction: column;">
+        <button type="button" class="btn btn-danger" id="generate-graph-button">Generate New Problem</button>
+        <div id="guideline-text">
+            <div>
+                Orange link represents bus travel time : <i class="fa fa-bus" aria-hidden="true" style="color: orange"></i><br>
+            </div>
+            <div>
+                Green link represents flight travel time : <i class="fa fa-plane" aria-hidden="true" style="color: green"></i><br> 
+            </div>
+            <div style="color:darkblue; font-weight: 600;">
+                Condition: Flight can only be taken once :     
+                <i class="fa fa-check" style="color: green"></i>
+
+            </div>
+        </div>
+     
+    </div>
+  
+    <script src="script.js"></script>
+
+</body>
+
+</html>

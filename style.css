@@ -1,0 +1,55 @@
+html,
+body {
+    height: 100%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#container{
+    width: 100%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+}
+
+#left-pane {
+    width: 50%;
+    height: 100%;
+    border: 1px solid lightgray;
+    display:flex;
+}
+
+
+
+#right-pane {
+    width: 50%;
+    height: 100%;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center; 
+}
+
+#right-pane-solution-window{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#generate-graph-button, #solve-button{
+    margin:auto;
+    display:block;
+    margin-top: 2%;
+}
+
+#guideline-text{
+    font-size: smaller; 
+    color:brown;
+    margin:2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    }
