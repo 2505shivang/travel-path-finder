@@ -4,6 +4,15 @@ body {
     font-family:'Times New Roman', Times, serif;
 }
 
+a{
+    color:white
+}
+
+a:hover{
+    color:white;
+
+}
+
 #container{
     width: 100%;
     height: 65%;
